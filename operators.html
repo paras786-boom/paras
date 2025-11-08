@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>C CODE HUB</title>
+
+</head>
+
+<body bgcolor="sky-blue">
+
+  <h1>OPERATORS</h1><br><br><hr>
+
+
+  <!--1st-->
+<h2>1.Write a program to show that example of pre-increment ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a = 5;
+    int b = ++a;
+    printf("a=%d, b=%d", a, b);
+}
+
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+a=6, b=6
+    </pre>
+ <hr>
+
+
+ <!--2nd-->
+<h2>2.Write a program to show that example of post-increment ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a = 5;
+    int b = a++;
+    printf("a=%d, b=%d", a, b);
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+a=6, b=5
+    </pre>
+<hr>
+
+
+<!--3rd-->
+<h2>3.Write a program to show that example of pre-decrement ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a = 5;
+    int b = --a;
+    printf("a=%d, b=%d", a, b);
+}
+
+
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+a=4, b=4
+    </pre>
+<hr>
+
+
+<!--4th-->
+<h2>4.Write a program to show that example of post-decrement ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a = 5;
+    int b = a--;
+    printf("a=%d, b=%d", a, b);
+}
+</pre>
+    <h3>Output:</h3>
+    <pre>
+a=4, b=5
+    </pre>
+<hr>
+
+
+<!--5th-->
+<h2>5.Write a program to enter 2 numbers from user add the number and show the answer , 
+  again take 2 number from user subtract the number display the answer ,again take 2 number from user multiply 
+  the number display the answer and ,again take 2 number from the user divide the number display the answer ,
+  again take 2 number find the remainder and display the answer ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a,b;
+    printf("Enter two numbers for addition: ");
+    scanf("%d %d",&a,&b);
+    printf("Addition=%d\n", a+b);
+
+    printf("Enter two numbers for subtraction: ");
+    scanf("%d %d",&a,&b);
+    printf("Subtraction=%d\n", a-b);
+
+    printf("Enter two numbers for multiplication: ");
+    scanf("%d %d",&a,&b);
+    printf("Multiplication=%d\n", a*b);
+
+    printf("Enter two numbers for division: ");
+    scanf("%d %d",&a,&b);
+    printf("Division=%d\n", a/b);
+
+    printf("Enter two numbers for remainder: ");
+    scanf("%d %d",&a,&b);
+    printf("Remainder=%d\n", a%b);
+}
+
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+Enter two numbers for addition: 2 2
+Addition=4
+Enter two numbers for subtraction: 2 2
+Subtraction=0
+Enter two numbers for multiplication: 2 2
+Multiplication=4
+Enter two numbers for division: 2 2
+Division=1
+Enter two numbers for remainder: 2 2
+Remainder=0
+    </pre>
+<hr>
+
+
+
+<!--6th-->
+<h2>6. Write a program to enter a number from the user ,the length of the number is depend on the user ,
+  programmer should print the last digit of number ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Last digit: %d", num%10);
+}
+</pre>
+    <h3>Output:</h3>
+    <pre>
+Enter a number: 12
+Last digit: 2
+    </pre>
+<hr>
+
+
+
+<!--7th-->
+<h2>7. Enter a decimal number from the user (float) and print the right hand side of the decimal point ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    float num;
+    int rhs;
+    printf("Enter a decimal number: ");
+    scanf("%f", &num);
+    rhs = (num - (int)num) * 100000; 
+    printf("Right-hand side: %d", rhs);
+}
+</pre>
+    <h3>Output:</h3>
+    <pre>
+Enter a decimal number: 2.4
+Right-hand side: 40000
+    </pre>
+<hr>
+
+
+
+<!--8th-->
+<h2>8. Enter a number from user and find out cube of numbers ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Cube: %d", num*num*num);
+}
+</pre>
+    <h3>Output:</h3>
+    <pre>
+Enter a number: 2
+Cube: 8
+    </pre>
+ <hr>
+
+
+
+ <!--9th-->
+<h2>9. Enter float number from user and round of the number ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    float num;
+    printf("Enter a float number: ");
+    scanf("%f", &num);
+    printf("Rounded: %d", (int)(num + 0.5));
+}
+</pre>
+    <h3>Output:</h3>
+    <pre>
+Enter a float number: 2.4
+Rounded: 2
+    </pre>
+<hr>
+ 
+
+
+<!--10th-->
+<h2>10. Enter a lower case character from user and print it into upper case ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    char ch;
+    printf("Enter a lowercase character: ");
+    scanf(" %c", &ch);
+    printf("Uppercase: %c", ch-32);
+}
+</pre>
+    <h3>Output:</h3>
+    <pre>
+Enter a lowercase character: a
+Uppercase: A
+    </pre>
+<hr>
+  
+
+
+<!--11th-->
+<h2>11. Enter marks of students and calculate average of student’s marks ?</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int n, i, marks, sum=0;
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+    for(i=1;i<=n;i++){
+        printf("Enter marks of student %d: ", i);
+        scanf("%d",&marks);
+        sum += marks;
+    }
+    printf("Average marks: %.2f", (float)sum/n);
+}
+</pre>
+    <h3>Output:</h3>
+    <pre>
+Enter number of students: 3
+Enter marks of student 1: 77
+Enter marks of student 2: 58
+Enter marks of student 3: 98
+Average marks: 77.67
+    </pre>
+<hr>
+  
+
+
+<!--12th-->
+<h2>12. Calculate simple interest = (P x R x T)/ 100</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    float P, R, T, SI;
+    printf("Enter Principal, Rate, Time: ");
+    scanf("%f %f %f",&P,&R,&T);
+    SI = (P*R*T)/100;
+    printf("Simple Interest: %.2f", SI);
+}
+
+</pre>
+    <h3>Output:</h3>
+    <pre>
+Enter Principal, Rate, Time: 2 3 4
+Simple Interest: 0.24
+    </pre>
+<hr>
+</body>
+</html>

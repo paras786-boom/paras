@@ -1,0 +1,316 @@
+<html>
+<head>
+<title>C CODE HUB</title>
+</head>
+<body bgcolor="sky-blue">
+
+<h1>Basic input/output</h1><br><br><hr>    
+
+
+    <!--1st-->
+    <h2>1. Write a program to print the message: Today I made my first C Program.</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+  printf("Today I made my first C program.");
+  getch();
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+Today I made my first C program.
+    </pre>
+  <hr>
+
+    <!--2nd-->
+    <h2>2. Write a program to read a character from the keyboard and display it on the screen.</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main() {
+  char ch;
+  clrscr();
+  printf("Type a character: ");
+  scanf("%c", &ch);
+  printf("The character is: %c", ch);
+  getch();
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+Type a character: k
+The character is: k
+    </pre>
+<hr>
+
+  <!--3rd-->  
+  <h2>3. Write a program to print your name at the center of the first line.</h2>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+  printf("\t\t\t\t\t        Akshay Sharma\n");
+  getch();
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+                                              Akshay Sharma
+    </pre>
+  <hr>
+  
+  <!--4th-->  
+  <h2>4. Write a program to store a single quote and print that variable to show single quote on output screen.</h2>
+    <h3>Code:
+  </h3>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main() {
+  char ch = '\'';
+  clrscr();
+  printf("Single quote is: %c", ch);
+  getch();
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+Single quote is: '
+    </pre>
+  <hr>
+
+
+  <!--5th-->
+    <h2>    5. Write a program for printing your name on output screen but your name should blink 5 times</h2>
+           <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include<dos.h>
+void main(){
+    int i;
+    for(i=1;i<=5;i++){
+     
+        printf("abc");
+        delay(500);
+       clrscr();
+
+       delay(500);
+    }
+}
+    </pre>
+  </pre>
+    <h3>Output:</h3>
+    <pre>
+
+    </pre>
+<hr>
+
+
+    <!--6th-->
+  <h2>6. Write the program to display this output ? #include<stdio.h> #include<conio.h> #include<dos.h> void main () { clrscr(); printf(“hello,welcome to c”); delay(5000);}</h2>
+    <pre>#include<stdio.h> 
+          #include<conio.h>
+             #include<dos.h> 
+              void main () {
+                 clrscr(); 
+                 printf(“hello,welcome to c”); 
+                 delay(5000);}</pre>
+      <h3>output:</h3>
+    <pre>
+    hello,welcome to c
+    </pre>
+ <hr>
+
+
+    <!--7th-->
+    <h2>7. Write a program to print your name at the center of the page ?</h2>
+    <h3>Code:</h3>
+  <pre>
+    #include<stdio.h>
+void main(){
+    printf("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t     Ram");
+}
+  </pre>
+  <h3>output:</h3>
+    <pre>
+
+
+
+
+
+
+                                             Ram
+
+
+
+
+
+      </pre>
+<hr>
+
+
+      <!--8th-->
+  <h2>8. Enter password display like ****** ?</h2>
+    <h3>Code:
+  </h3>
+  <pre>
+#include<stdio.h>
+void main(){
+    char a,b,c,d,e,f;
+    printf("enter password(6 word): ");
+    scanf("%c %c %c %c %c %c",&a,&b,&c,&d,&e,&f);
+    printf("pass is ******");
+}
+}
+</pre>
+<h3>output:</h3>
+<pre>
+enter password(6 word):******
+pass is55555
+</pre>
+<hr>
+
+
+<!--9th-->
+<h2>9. Enter two character from user and print ASCII value ?</h2>
+    <h3>Code:
+  </h3>
+  <pre>
+#include<stdio.h>
+void main(){
+    char a;
+    char b;
+    printf("enter first character: ");
+    scanf("%c %c",&a,&b);
+    //printf("enter second character: ");
+    //scanf("%c",&b);
+    printf("ascii value is %d and %d",a,b);
+}
+</pre>
+<h3>output:</h3>
+<pre>
+enter first character: x
+enter second character: y
+ascii value is 120 and 121
+</pre>
+<hr>
+
+
+<!--10th-->
+<h2>10. Print all ASCII character 0 to 127 ?</h2>
+    <h3>Code:</h3>
+  <pre>
+#include<stdio.h>
+void main(){
+int i;
+for(i=0;i<=127;i++){
+    printf("%c\n",i);
+}
+}
+
+</pre>
+<h3>output:</h3>
+<pre>
+(space)
+!
+"
+#
+$
+%
+&
+'
+(
+)
+*
++
+,
+-
+.
+/
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+:
+;
+<
+=
+> 
+?
+@
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+[
+\
+]
+^
+_
+`
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+{
+|
+}
+~
+⌂
+</pre>
+<hr>
+</body>
+</html>
